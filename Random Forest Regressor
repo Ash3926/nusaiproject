@@ -1,0 +1,21 @@
+#need to import processed data
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_error
+
+y = []
+x_new = []
+for row in data[1:]:
+  y.append(int(row[9]))
+  x_new.append(row[:9])
+
+x_train, x_test, y_train, y_test = train_test_split(x_new, y, test_size=0.2, random_state=42)
+forest_model = RandomForestRegressor(n_estimators=100) #the number of trees that are being used
+
+# Now fit the model on the training data
+forest_model.fit(x_train, y_train)
+
+from sklearn.metrics import mean_absolute_error
+mae = mean_absolute_error(y_test, forest_model.predict(x_test))
+print("MAE:", mae)
