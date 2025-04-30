@@ -18,4 +18,10 @@ forest_model.fit(x_train, y_train)
 
 from sklearn.metrics import mean_absolute_error
 mae = mean_absolute_error(y_test, forest_model.predict(x_test))
-print("MAE:", mae)
+print("Mean Absolute Error:", mae)
+
+new_data = [[75, "4 ROOM", "2023-06", "85 years", 3.2, "Model A", 57000, 2.1]]  # Example row (needs to be encoded)
+
+prediction = forest_model.predict(new_data)
+print("Predicted resale price:", prediction[0])
+
