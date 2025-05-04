@@ -33,7 +33,6 @@ Test/Validation/Training split of 15/15/70 to be used.
 (Data from 1990-2014 to be trained on, 2015-2019 for hyperparameter tuning, 2020-2024 to be tested on)
 Tools of analysis:
 - Lowest possible MAE (mean absolute error)
-- Analysis of MAE across years/towns
 - Feature Importance Ranking (determine which feature affects the prediction most) - SHAP Analysis
 
 Work Distribution
