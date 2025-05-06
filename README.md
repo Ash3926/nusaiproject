@@ -9,6 +9,5 @@ Ensure necessary libraries are installed:
 - pandas
 - xgboost
 
-Processed files have been uploaded to save time, but to recreate them, download the files from the links provided and Run All on the file. Takes an additional ~40minutes.
-
-To only see the models' performance, run the code blocks beginning from `# Read in data from written files`
+Ensure your downloaded data files are in a subfolder named `Datasets`.
+Run All on the file to produce the datasets necessary and model performance statistics.
