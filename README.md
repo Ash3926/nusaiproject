@@ -29,8 +29,8 @@ We will use the scikit-learn Standard Scaler
 ## Hyperparameter Tuning
 - Ray Tune
 ## Model Evaluation
-Test/Validation/Training split of 15/15/70 to be used.
-(Data from 1990-2014 to be trained on, 2015-2019 for hyperparameter tuning, 2020-2024 to be tested on)
+Test/Validation/Training split of 70/15/15 to be used 
+(Data from 1990-2009 to be trained on, 2010-2014 for hyperparameter tuning and 2015-2019 to be tested on)
 Tools of analysis:
 - Lowest possible MAE (mean absolute error)
 - Feature Importance Ranking (determine which feature affects the prediction most) - SHAP Analysis
