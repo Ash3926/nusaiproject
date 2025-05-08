@@ -8,6 +8,10 @@ Ensure necessary libraries are installed:
 - geopy
 - pandas
 - xgboost
+- matplotlib
 
 Ensure your downloaded data files are in a subfolder named `Datasets`.
-Run All on the file to produce the datasets necessary and model performance statistics.
+
+The `Data Preprocessing` notebook can be run to create the processed files, but for ease of access they have already been created and saved.
+
+Run All on the `Final Project Submission` notebook to see the model's performances.
